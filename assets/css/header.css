@@ -9,7 +9,7 @@ body {
 #container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 100vh 200vh 100vh 80px;
+  grid-template-rows: 100px 100vh 120vh 100vh 80px;
   grid-template-areas:
     "head"
     "section1"
@@ -223,27 +223,27 @@ body {
   text-align: center;
   align-items: center;
   flex-grow: 1;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .img__bloque2 {
-  width: 30vh;
+  width: 60vh;
   height: 45vh;
   object-fit: cover;
   border-radius: 20px;
 }
 
 .img2__bloque2 {
-  width: 30vh;
+  width: 60vh;
   height: 45vh;
   object-fit: cover;
   border-radius: 20px;
 }
 .bloque2 p {
-  font-size: 25px;
+  font-size: 18px;
   color: white;
-  width: 250px;
-  padding: 15px 0;
+  width: 320px;
+  padding: 5px 0;
 }
 
 #section3 {
@@ -291,6 +291,23 @@ body {
   #section3 {
     height: 100vh;
   }
+  .img__bloque2 {
+    width: 60vh;
+    height: 40vh;
+  }
+
+  .img2__bloque2 {
+    width: 60vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .bloque2 p {
+    font-size: 20px;
+    color: white;
+    width: 450px;
+    padding: 40px 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -310,6 +327,18 @@ body {
   .bloque2 {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .img__bloque2 {
+    width: 60vh;
+    height: 60vh;
+  }
+
+  .img2__bloque2 {
+    width: 60vh;
+    height: 60vh;
+  }
+  .bloque2 p {
+    font-size: 25px;
   }
   .bloque3 {
     width: 500px;
