@@ -227,14 +227,14 @@ body {
 }
 
 .img__bloque2 {
-  width: 60vh;
+  width: 300px;
   height: 45vh;
   object-fit: cover;
   border-radius: 20px;
 }
 
 .img2__bloque2 {
-  width: 60vh;
+  width: 300px;
   height: 45vh;
   object-fit: cover;
   border-radius: 20px;
@@ -361,7 +361,7 @@ footer {
   background-color: #252422;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 80px;
   padding: 20px;
 }
 
@@ -382,6 +382,7 @@ footer ul li {
   margin: 0;
   align-items: center;
   list-style-type: none;
+  font-size: 14px;
 }
 
 footer ul li a {
@@ -396,4 +397,28 @@ footer ul li a {
 
 footer ul li a:hover {
   color: aliceblue;
+}
+@media only screen and (min-width: 768px) {
+  footer ul {
+    gap: 25px;
+  }
+  footer ul li a {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  footer ul {
+    gap: 40px;
+  }
+  footer ul li a {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 18px;
+    padding-left: 40px;
+  }
 }

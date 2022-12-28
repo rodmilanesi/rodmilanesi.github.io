@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/CoderHouse Class/PRUEBA/assets/css/contacto.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/contacto.css" />
+  </head>
+  <body id="container">
+    <!-- Cabecera -->
+    <header id="head" class="animate__animated animate__fadeIn">
+      <a href="/index.html"
+        ><img
+          id="logo"
+          src="/assets/img/Logo-JAC-Seguridad-(web-white).png"
+          alt="Jac Seguridad Corporativa S.A."
+      /></a>
+
+      <!-- Inicio Menú -->
+      <nav class="menu">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li>
+            <a href="productos.html">Productos</a>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Fin Menú -->
+    </header>
+
+    <section id="section1">
+      <form class="form__contact">
+        <h1>Formulario de Contacto</h1>
+        <label class="form__label">Nombre y Apellido</label>
+
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Escribre tu nombre aquí"
+        />
+
+        <label class="form__label">Empresa</label>
+
+        <input
+          class="form__input"
+          type="text"
+          name="Empresa"
+          placeholder="El nombre de tu empresa"
+        />
+
+        <label class="form__label">Mail</label>
+
+        <input
+          class="form__input"
+          type="email"
+          placeholder="Ej: nombre@mail.com"
+        />
+
+        <label class="form__label">Teléfono de Contacto</label>
+
+        <input
+          class="form__input"
+          type="number"
+          name="Número"
+          placeholder="987654321"
+        />
+        <label class="form__label">Mensaje</label>
+        <textarea
+          class="form__textarea"
+          id="comentario"
+          placeholder="¿En qué te podemos ayudar?"
+        ></textarea>
+
+        <input class="btn__submit" type="submit" value="Enviar Consulta" />
+      </form>
+    </section>
+    <footer id="footer">
+      <p>Copyright 2022®</p>
+      <ul>
+        <li>
+          <a href="#logo">Ir al comienzo</a>
+        </li>
+        <li>
+          <a href="mailto:rt.albarracin@gmail.com">Contáctanos aquí</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
