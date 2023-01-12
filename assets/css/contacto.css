@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
-#container {
+#container__contact {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 100%;
@@ -139,7 +139,7 @@ body {
 }
 /*Fin Configuración Menú inicio responsive*/
 
-#section1 {
+#section1__contact {
   grid-area: section1;
   background-image: url(img__contact2.jpeg);
   background-repeat: no-repeat;
@@ -150,12 +150,12 @@ body {
   align-items: center;
   text-align: center;
 }
-#section1 h1 {
+#section1__contact h1 {
   font-size: 30px;
-  color: #f6bd60;
+  color: #ffc300;
   font-weight: normal;
 }
-#section1 .form__contact {
+#section1__contact .form__contact {
   background: rgba(0, 0, 0, 0.6);
   width: 90%;
   max-width: 600px;
@@ -195,17 +195,17 @@ body {
   width: 100%;
   font-family: "Times New Roman", Times, serif;
   outline: none;
-  background-color: #ffc300;
+  background-color: #ffd60a;
   font-size: 18px;
   border: none;
-  color: white;
+  color: #252422;
   padding: 15px 0;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .form__contact .btn__submit:hover {
-  background-color: #ffd60a;
-  color: black;
+  background-color: #ffc300;
+  color: red;
 }
 
 @media only screen and (min-width: 768px) {

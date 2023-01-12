@@ -6,7 +6,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-#container {
+#container__index {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100px 100vh 120vh 100vh 80px;
@@ -160,7 +160,7 @@ body {
   background-size: cover;
 }
 
-#section1 {
+#section1__index {
   grid-area: section1;
   background-image: url(../img/AdobeStock_354102149.jpeg);
   display: flex;
@@ -169,7 +169,7 @@ body {
   align-items: center;
 }
 
-.bloque1 {
+.bloque1__index {
   text-align: center;
   color: #e9ecef;
   background: rgba(0, 0, 0, 0.4);
@@ -178,7 +178,7 @@ body {
   width: 320px;
 }
 
-.bloque1:hover {
+.bloque1__index:hover {
   background: rgba(0, 0, 0, 0.6);
   transform: scale(1.1);
   transition: 0.5s ease;
@@ -196,19 +196,19 @@ body {
   color: rgba(255, 255, 5, 0.855);
 }
 
-.bloque1 h1 {
+.bloque1__index h1 {
   font-size: 2rem;
   margin: 0;
   padding: 20px;
 }
-.bloque1 p {
+.bloque1__index p {
   font-size: 1.5rem;
   padding: 10px;
   margin: 0;
   width: 310px;
 }
 
-#section2 {
+#section2__index {
   grid-area: section2;
   background-color: #001d3d;
   background-color: #252422;
@@ -216,7 +216,7 @@ body {
   height: 120vh;
 }
 
-.bloque2 {
+.bloque2__index {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -239,9 +239,9 @@ body {
   object-fit: cover;
   border-radius: 20px;
 }
-.bloque2 p {
+.bloque2__index p {
   font-size: 18px;
-  color: white;
+  color: white; /*texto claro*/
   width: 320px;
   padding: 5px 0;
 }
@@ -266,6 +266,8 @@ body {
 
 .bloque3:hover {
   background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  transition: 0.5s ease;
 }
 
 .bloque3 h2 {
@@ -281,11 +283,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .bloque2 {
+  .bloque2__index {
     flex-direction: column;
     justify-content: center;
   }
-  #section1 {
+  #section1__index {
     height: 100vh;
   }
   #section3 {
@@ -302,7 +304,7 @@ body {
     object-fit: cover;
     border-radius: 20px;
   }
-  .bloque2 p {
+  .bloque2__index p {
     font-size: 20px;
     color: white;
     width: 450px;
@@ -311,20 +313,20 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-  .bloque1 {
+  .bloque1__index {
     width: 500px;
   }
-  .bloque1 h1 {
+  .bloque1__index h1 {
     padding: 25px;
   }
-  .bloque1 p {
+  .bloque1__index p {
     padding: 15px;
     width: 450px;
   }
-  #section2 {
+  #section2__index {
     height: 80vh;
   }
-  .bloque2 {
+  .bloque2__index {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -337,7 +339,7 @@ body {
     width: 60vh;
     height: 60vh;
   }
-  .bloque2 p {
+  .bloque2__index p {
     font-size: 25px;
   }
   .bloque3 {
