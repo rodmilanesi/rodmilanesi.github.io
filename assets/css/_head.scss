@@ -2,7 +2,7 @@
 
 #head {
     display: flex;
-    background-color: #252422;
+    background-color: map-get(c.$colores,"header");
     justify-content: space-between;
     align-items: center;
     padding: 0px;
@@ -16,12 +16,12 @@
 }
 
 .checkbtn {
-    color: white;
+    color: map-get(c.$colores, "checkbtn");
     padding-right: 20px;
 }
   
 #logo {
-    width: 130px;
+    width: c.$ancho-logo-movil;
     padding: 15px;
 }
   
@@ -34,13 +34,13 @@
 #check:checked ~ ul {
     position: fixed;
     width: 320px;
-    top: 80px;
+    top: 0px;
     height: 100%;
-    background: rgba(42, 42, 42, 0.9);
+    background: map-get(c.$colores,"menu-hamburguesa");
     display: block;
     left: 0%;
     list-style: none;
-    font-size: 18px;
+    font-size: c.$font-size-hamburguer;
     line-height: 50px;
     text-align: left;
     padding-left: 20%;
@@ -54,7 +54,7 @@
 }
 
 .menu ul li a {
-    color: #ffc300;
+    color: map-get(c.$colores,"texto-menu");
     text-decoration: none;
     display: inline-block;
 }
@@ -65,7 +65,7 @@
 }
 
 .menu ul li a:hover {
-    color: white;
+    color: map-get(c.$colores, "texto-menu-hover");
     transform: scale(1.05);
     transition: 0.3s ease;
     cursor: pointer;
@@ -79,14 +79,14 @@
       display: flex;
       list-style: none;
       gap: 10px;
-      font-size: 14px;
+      font-size: c.$font-size-tablet;
     }
     .menu ul li {
       font-weight: lighter;
       list-style: none;
     }
     .menu ul li a {
-      color: #ffc300;
+      color: map-get(c.$colores, "texto-menu");
       text-decoration: none;
       display: inline-block;
     }
@@ -95,7 +95,7 @@
       text-decoration: none;
     }
     .menu ul li a:hover {
-      color: white;
+      color: map-get(c.$colores,"texto-menu-hover");
       transform: scale(1.05);
       transition: 0.3s ease;
     }
@@ -112,12 +112,12 @@
       padding-right: 40px;
     }
     .menu ul {
-      font-size: 18px;
+      font-size: c.$font-size-desktop;
   
       gap: 15px;
     }
     #logo {
-      width: 150px;
+      width: c.$ancho-logo-desktop;
     }
 }
 /*Fin Configuración Menú inicio responsive*/

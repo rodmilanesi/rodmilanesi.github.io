@@ -52,13 +52,13 @@ html,
 }
   
 .parallax {
-    background: #fff fixed no-repeat 50% 50%;
+    background: map-get(c.$colores,"background") fixed no-repeat 50% 50%;
     background-size: cover;
 }
   
 #section1__index {
     grid-area: section1;
-    background-image: url(../img/AdobeStock_354102149.jpeg);
+    background-image: url(/assets/img/Fondo\ Parallax\ compress.jpeg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -67,29 +67,37 @@ html,
   
 .bloque1__index {
     text-align: center;
-    color: #e9ecef;
-    background: rgba(0, 0, 0, 0.4);
+    color: map-get(c.$colores,"bloque__index");
+    background: map-get(c.$colores,"background-bloque");
     border-radius: 10px;
     margin: 0;
     width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 .bloque1__index:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: map-get(c.$colores,"background-bloqueH");
     transform: scale(1.1);
     transition: 0.5s ease;
 }
 .boton__index {
-    background-color: rgb(0, 18, 137, 0);
-    color: #e9ecef;
+    background-color: map-get(c.$colores,"bloque__fondo");
+    color: map-get(c.$colores,"bloque__index");
     font-weight: bold;
     font-size: 1.2rem;
     margin: 15px 0;
     border-radius: 5px;
     border: solid 0px;
 }
-.boton__index:hover {
-    color: rgba(255, 255, 5, 0.855);
+
+.boton__index a{
+  text-decoration: none;
+  color: map-get(c.$colores,"texto-claro");
+}
+.boton__index a:hover {
+    color: map-get(c.$colores,"boton__index");
 }
   
 .bloque1__index h1 {
@@ -106,8 +114,7 @@ html,
   
 #section2__index {
     grid-area: section2;
-    background-color: #001d3d;
-    background-color: #252422;
+    background-color: map-get(c.$colores,"section2__index");
     display: flex;
     height: 120vh;
 }
@@ -137,14 +144,14 @@ html,
 }
 .bloque2__index p {
     font-size: 18px;
-    color: white;
+    color: map-get(c.$colores,"texto-claro");
     width: 320px;
     padding: 5px 0;
 }
   
 #section3 {
     grid-area: section3;
-    background-image: url(../img/AdobeStock_354102149.jpeg);
+    background-image: url(/assets/img/Fondo\ Parallax\ compress.jpeg);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -158,6 +165,9 @@ html,
     border-radius: 10px;
     margin: 0;
     width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 .bloque3:hover {
@@ -210,14 +220,14 @@ html,
   
 @media only screen and (min-width: 1280px) {
     .bloque1__index {
-      width: 500px;
+      width: 600px;
     }
     .bloque1__index h1 {
       padding: 25px;
     }
     .bloque1__index p {
       padding: 15px;
-      width: 450px;
+      width: 500px;
     }
     #section2__index {
       height: 80vh;
@@ -239,14 +249,14 @@ html,
       font-size: 25px;
     }
     .bloque3 {
-      width: 500px;
+      width: 600px;
     }
     .bloque3 h2 {
       padding: 25px;
     }
     .bloque3 p {
       padding: 15px;
-      width: 450px;
+      width: 500px;
     }
 }
 
@@ -423,7 +433,7 @@ html,
       left: 50%;
     }
     .container__aboutUs {
-      width: 50%;
+      width: 300px;
       padding-left: 50px;
       padding-right: 50px;
     }
@@ -462,6 +472,16 @@ html,
     }
 }
 
+@media only screen and (min-width: 1215px) {
+  .container__aboutUs {
+    width: 50%;
+  }
+  
+  .left__container__arrow {
+  left: 500px;
+  }
+}
+
 //Fin Content about__us.css
 
 //Inicio Content service.css
@@ -480,7 +500,7 @@ html,
 #section1__service {
     grid-area: section1;
     width: 100%;
-    background-image: url(/assets/img/img_services.jpeg);
+    background-image: url(/assets/img/service\ img\ compress.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -548,6 +568,12 @@ html,
     font-weight: 500;
     padding: 30px 0;
 }
+
+.row__modify{
+  position:relative;
+  z-index:-1;
+  padding-bottom: 20px;
+}
   
 #footer__product {
     grid-area: footer;
@@ -571,7 +597,7 @@ html,
 
 #section1__contact {
     grid-area: section1;
-    background-image: url(img__contact2.jpeg);
+    background-image: url(/assets/img/Fondo\ Contact\ compress.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
