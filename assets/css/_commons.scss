@@ -1,48 +1,40 @@
-
-
-
-
 //Variables de Colores para la Web
 
-$colores:(
-    backgroud:linear-gradient(
-        to left,
-        #f1f2f6 10%,
-        rgba(238, 210, 255, 0.3) 100%
-    ),
-    header:#252422,
-    checkbtn:aliceblue,
-    menu-hamburguesa:rgba(42, 42, 42, 0.9),
-    texto-menu:#ffc300,
-    texto-menu-hover:white,
-    bloque__fondo: rgb(0, 18, 137, 0),
-    bloque__index:#e9ecef,
-    boton__index:rgba(255, 255, 5, 0.855),
-    section2__index:#252422,
-    texto-claro:white,
-    contact-box:rgba(0, 0, 0, 0.6),
-    contact-input:rgba(0, 0, 0, 0.7),
-    form-label:rgba(245, 245, 245, 0.8),
-    background-bloque:rgba(0, 0, 0, 0.4),
-    background-bloqueH:rgba(0, 0, 0, 0.6),
+$colores: (
+  backgroud:
+    linear-gradient(to left, #f1f2f6 10%, rgba(238, 210, 255, 0.3) 100%),
+  header: #252422,
+  checkbtn: aliceblue,
+  menu-hamburguesa: rgba(42, 42, 42, 0.9),
+  texto-menu: #ffc300,
+  texto-menu-hover: white,
+  bloque__fondo: rgb(0, 18, 137, 0),
+  bloque__index: #e9ecef,
+  boton__index: rgba(255, 255, 5, 0.855),
+  section2__index: #252422,
+  texto-claro: white,
+  contact-box: rgba(0, 0, 0, 0.6),
+  contact-input: rgba(0, 0, 0, 0.7),
+  form-label: rgba(245, 245, 245, 0.8),
+  background-bloque: rgba(0, 0, 0, 0.4),
+  background-bloqueH: rgba(0, 0, 0, 0.6),
+  backgroud-box-timeline: rgba(33, 39, 202, 0.1),
+  timeline: rgba(0, 0, 0, 0.3),
+  background-serviceBox: red,
 );
 
 //Variables Header y Nav
 
-$ancho-logo-movil:130px;
-$ancho-logo-desktop:150px;
-$font-size-hamburguer:18px;
-$font-size-tablet:14px;
-$font-size-desktop:16px;
-
-
-
-
+$ancho-logo-movil: 130px;
+$ancho-logo-desktop: 150px;
+$font-size-hamburguer: 18px;
+$font-size-tablet: 14px;
+$font-size-desktop: 16px;
 
 //variables Footer
 
-$alto-footer:80px;
-$ancho-footer:100%;
+$alto-footer: 80px;
+$ancho-footer: 100%;
 $font-size-footer-m: 14px;
 $font-size-footer-t: 16px;
-$font-size-footer-d:17px;
+$font-size-footer-d: 17px;
