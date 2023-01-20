@@ -686,7 +686,6 @@ iframe {
   display: block;
   color: map-get(c.$colores,"form-label");
   font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .form__contact .form__input,
@@ -701,7 +700,6 @@ iframe {
   border-radius: 2px;
   font-size: 14px;
   color: map-get(c.$colores,"texto-claro");
-  font-family: "Times New Roman", Times, serif;
 }
 
 .form__contact .form__textarea {
@@ -712,7 +710,6 @@ iframe {
 
 .form__contact .btn__submit {
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
   outline: none;
   background-color: map-get(c.$colores,"texto-menu");
   font-size: 18px;

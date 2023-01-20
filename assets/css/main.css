@@ -768,7 +768,6 @@ iframe {
   display: block;
   color: rgba(245, 245, 245, 0.8);
   font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .form__contact .form__input,
@@ -783,7 +782,6 @@ iframe {
   border-radius: 2px;
   font-size: 14px;
   color: white;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .form__contact .form__textarea {
@@ -794,7 +792,6 @@ iframe {
 
 .form__contact .btn__submit {
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
   outline: none;
   background-color: #ffc300;
   font-size: 18px;
