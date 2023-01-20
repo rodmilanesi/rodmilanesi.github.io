@@ -201,7 +201,7 @@ body {
 }
 
 .boton__index a:hover {
-  color: rgba(255, 255, 5, 0.855);
+  color: rgba(255, 255, 5, 0.2);
 }
 
 .bloque1__index h1 {
@@ -269,6 +269,7 @@ body {
 .bloque3 {
   text-align: center;
   color: #e9ecef;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 0;
   width: 320px;
@@ -601,6 +602,7 @@ body {
 .bloque1__service {
   text-align: center;
   color: #e9ecef;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 0;
   width: 320px;
@@ -613,12 +615,13 @@ body {
 }
 
 .text__principal {
-  background: red;
+  background: rgba(232, 219, 253, 0.2);
   padding: 25px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -669,11 +672,16 @@ iframe {
   }
 }
 .box__service {
+  background-color: rgba(232, 219, 253, 0.2);
   border-radius: 6px;
   max-width: 400px;
   height: 600px;
   padding: 20px;
   margin-top: 30px;
+}
+
+.box__service:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 768px) {
@@ -684,7 +692,7 @@ iframe {
 }
 .box__service img {
   width: 100%;
-  height: auto;
+  max-height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 15px;
@@ -742,7 +750,7 @@ iframe {
 
 #section1__contact h1 {
   font-size: 30px;
-  color: #f6bd60;
+  color: #ffc300;
   font-weight: normal;
 }
 
@@ -798,8 +806,7 @@ iframe {
 }
 
 .form__contact .btn__submit:hover {
-  background-color: #ffd60a;
-  color: black;
+  color: #252422;
 }
 
 @media only screen and (min-width: 768px) {

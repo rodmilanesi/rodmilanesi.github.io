@@ -10,7 +10,7 @@ $colores: (
   texto-menu-hover: white,
   bloque__fondo: rgb(0, 18, 137, 0),
   bloque__index: #e9ecef,
-  boton__index: rgba(255, 255, 5, 0.855),
+  boton__index: rgba(255, 255, 5, 0.2),
   section2__index: #252422,
   texto-claro: white,
   contact-box: rgba(0, 0, 0, 0.6),
@@ -20,7 +20,9 @@ $colores: (
   background-bloqueH: rgba(0, 0, 0, 0.6),
   backgroud-box-timeline: rgba(33, 39, 202, 0.1),
   timeline: rgba(0, 0, 0, 0.3),
-  background-serviceBox: red,
+  background-serviceBox: rgba(232, 219, 253, 0.2),
+  background-form:rgba(0, 0, 0, 0.7),
+  hover-boton-from:#ffd60a,
 );
 
 //Variables Header y Nav

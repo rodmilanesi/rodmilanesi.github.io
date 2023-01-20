@@ -15,6 +15,7 @@ body {
 }
 
 //Content Index.css
+
 #container__index {
   display: grid;
   grid-template-columns: 100%;
@@ -158,7 +159,7 @@ body {
 .bloque3 {
   text-align: center;
   color: map-get(c.$colores, "bloque__index");
-  background: map-get(c.$colores, "backgroud-bloque");
+  background: map-get(c.$colores, "background-bloque");
   border-radius: 10px;
   margin: 0;
   width: 320px;
@@ -275,6 +276,7 @@ body {
 //Fin content index.html
 
 //Inicio Content about__us.css
+
 #container__aboutUs {
   min-height: 100vh;
   display: grid;
@@ -479,6 +481,7 @@ body {
 //Fin Content about__us.css
 
 //Inicio Content service.css
+
 #container__service {
   min-height: 100vh;
   display: grid;
@@ -506,7 +509,7 @@ body {
 .bloque1__service {
   text-align: center;
   color: map-get(c.$colores, "bloque__index");
-  background: map-get(c.$colores, "backgroud-bloque");
+  background: map-get(c.$colores, "background-bloque");
   border-radius: 10px;
   margin: 0;
   width: 320px;
@@ -518,12 +521,13 @@ body {
   height: 100%;
 }
 .text__principal {
-  background: red;
+  background: map-get(c.$colores, "background-serviceBox");
   padding: 25px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -574,13 +578,18 @@ iframe {
 }
 
 .box__service {
-  background-color: map-get(c.$colores, "backgroud-serviceBox");
+  background-color: map-get(c.$colores, "background-serviceBox");
   border-radius: 6px;
   max-width: 400px;
   height: 600px;
   padding: 20px;
   margin-top: 30px;
 }
+
+.box__service:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (min-width: 768px) {
   .box__service {
     min-width: 300px;
@@ -589,7 +598,7 @@ iframe {
 }
 .box__service img {
   width: 100%;
-  height: auto;
+  max-height: 380px;
   object-fit: cover;
   padding-bottom: 15px;
 }
@@ -659,7 +668,7 @@ iframe {
 
 #section1__contact h1 {
   font-size: 30px;
-  color: #f6bd60;
+  color: map-get(c.$colores,"texto-menu");
   font-weight: normal;
 }
 
@@ -675,23 +684,23 @@ iframe {
 
 .form__contact .form__label {
   display: block;
-  color: rgba(245, 245, 245, 0.8);
+  color: map-get(c.$colores,"form-label");
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .form__contact .form__input,
 .form__textarea {
-  background: rgba(0, 0, 0, 0.7);
+  background: map-get(c.$colores,"background-form");
   border: none;
   outline: none;
-  border-bottom: 2px solid #ffc300;
+  border-bottom: 2px solid map-get(c.$colores,"texto-menu");
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 2px;
   font-size: 14px;
-  color: white;
+  color: map-get(c.$colores,"texto-claro");
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -705,18 +714,18 @@ iframe {
   width: 100%;
   font-family: "Times New Roman", Times, serif;
   outline: none;
-  background-color: #ffc300;
+  background-color: map-get(c.$colores,"texto-menu");
   font-size: 18px;
   border: none;
-  color: white;
+  color: map-get(c.$colores,"texto-claro");
   padding: 15px 0;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .form__contact .btn__submit:hover {
-  background-color: #ffd60a;
-  color: black;
+  background-color: map-get(c.$colores,"hover-boton-form");
+  color: map-get(c.$colores,"header");
 }
 
 @media only screen and (min-width: 768px) {
