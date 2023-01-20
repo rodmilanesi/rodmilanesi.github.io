@@ -149,7 +149,7 @@ body {
 
 #section3 {
   grid-area: section3;
-  background-image: url(/assets/img/Fondo\ Parallax\ compress.jpeg);
+  background-image: url(/assets/img/Parallax2_compress.jpeg);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -170,7 +170,7 @@ body {
 }
 
 .bloque3:hover {
-  background: map-get(c.$colores, "backgroud-bloqueH");
+  background: map-get(c.$colores, "background-bloqueH");
   transform: scale(1.1);
 }
 
@@ -313,16 +313,29 @@ body {
   align-items: center;
   text-align: center;
   font-size: 16px;
+
+}
+.text__letter__company{
+  max-width: 1000px;
+  background-color: rgba(33, 39, 202, 0.02),;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  transition: 0.3s ease;
+}
+
+.text__letter__company:hover{
+  box-shadow: 2px black;
+
 }
 
 .letter__company h3 {
-  max-width: 1200px;
+  padding: 30px;
   font-size: 30px;
   font-weight: 600;
 }
 
 .letter__company p {
-  max-width: 1200px;
+  padding: 30px;
   text-align: justify;
 }
 
@@ -497,7 +510,7 @@ body {
 #section1__service {
   grid-area: section1;
   width: 100%;
-  background-image: url(/assets/img/img_services.jpeg);
+  background-image: url(/assets/img/banner_service_2_compress.jpeg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -512,7 +525,23 @@ body {
   background: map-get(c.$colores, "background-bloque");
   border-radius: 10px;
   margin: 0;
-  width: 320px;
+  max-width: 400px;
+  transition: 0.5s ease;
+}
+.text__img{
+  padding: 20px;
+}
+.text__img h1 {
+font-size: 32px;
+}.text__img p{
+  font-size: 20px;
+  padding-top: 20px;
+  
+}
+
+.bloque1__service:hover {
+  background: map-get(c.$colores, "background-bloqueH");
+  transform: scale(1.1);
 }
 
 #section2__service {
@@ -558,6 +587,11 @@ body {
   align-items: center;
 }
 
+.section3__service a {
+  text-decoration: none;
+  color: map-get(c.$colores,"header");
+}
+
 .video {
   width: 100%;
   height: 100%;
@@ -577,6 +611,7 @@ iframe {
   }
 }
 
+
 .box__service {
   background-color: map-get(c.$colores, "background-serviceBox");
   border-radius: 6px;
@@ -586,8 +621,9 @@ iframe {
   margin-top: 30px;
 }
 
+
 .box__service:hover {
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (min-width: 768px) {
@@ -625,7 +661,7 @@ iframe {
 
 .titulo__productos {
   text-align: center;
-  font-weight: 500;
+  font-size: 40px;
   padding: 30px 0;
 }
 
