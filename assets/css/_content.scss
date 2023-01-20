@@ -525,11 +525,17 @@ body {
   background: map-get(c.$colores, "background-bloque");
   border-radius: 10px;
   margin: 0;
-  max-width: 400px;
+  max-width: 300px;
   transition: 0.5s ease;
 }
+
+@media only screen and (min-width:768px){
+  .bloque1__service {
+    max-width:400px;
+  }
+}
 .text__img{
-  padding: 20px;
+  padding: 5px;
 }
 .text__img h1 {
 font-size: 32px;
