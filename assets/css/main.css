@@ -160,7 +160,7 @@ body {
 
 #section1__index {
   grid-area: section1;
-  background-image: url(/assets/img/Fondo\ Parallax\ compress.jpeg);
+  background-image: url(/assets/img/Fondo_Parallax_compress.jpeg);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -791,7 +791,7 @@ iframe {
 
 #section1__contact {
   grid-area: section1;
-  background-image: url(/assets/img/Fondo\ Contact\ compress.jpeg);
+  background-image: url(/assets/img/Fondo_Contact_compress.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
