@@ -667,7 +667,7 @@ body {
   }
 }
 .text__video {
-  padding: 15px 10px;
+  padding: 15px 0px;
   text-align: center;
   width: 100%;
 }
@@ -675,6 +675,7 @@ body {
 @media only screen and (min-width: 768px) {
   .text__video {
     width: 60%;
+    padding: 15px 15px;
   }
 }
 .text__video p {
@@ -713,6 +714,16 @@ iframe {
     flex-wrap: wrap;
   }
 }
+.btn__contact a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn__contact a:hover {
+  color: #ffc300;
+}
+
 .box__service {
   background-color: rgba(232, 219, 253, 0.2);
   border-radius: 6px;
